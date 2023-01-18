@@ -114,4 +114,8 @@ console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findScore([3,7,3,7,1,1]));
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findFrame([3,7,3,7,1,1]));
+console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
+console.log(findScore([3,7,3,7,1,1]));
+console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
+console.log(findFrame([3,7,3,7,1,1]));
 module.exports ={ findScore, findFrame };
