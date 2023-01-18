@@ -119,7 +119,7 @@ function getMaxScore(rollsArray)
     return maxScore;
 }
 console.log(findScore([3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6]));
-console.log(findScore([3,7,3,7,1,1]));
+//console.log(findScore([3,7,3,7,1,1]));
 console.log(findScore([10,10,10,10,10,10,10,10,10,10,10,7]));
 //console.log(findScore([3,7,3,7,1,1]));
 console.log('.');
