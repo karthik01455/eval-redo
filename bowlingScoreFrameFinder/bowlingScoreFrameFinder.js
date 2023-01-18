@@ -1,7 +1,7 @@
 function findScore(rolls)
 {
     function calculateFrame(element,index,array)
-    { if(index<=10)
+    { if(index<=20)
     {
         if(count == 0 && element!= 10)
         {
