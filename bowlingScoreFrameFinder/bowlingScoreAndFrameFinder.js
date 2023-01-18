@@ -29,7 +29,7 @@ function findScore(rolls)
             count=0;
             sum=0;
         }
-        else if(count==0 && element == 10 && index<array.length-2)
+        else if(count==0 && element == 10 )
         {
             sum=0;
             result = result + 10 ;
@@ -121,7 +121,7 @@ function getMaxScore(rollsArray)
     rollsArray.forEach(findMaxScore);
     return maxScore;
 }
-console.log(findScore([10,10,10,10,10,10,10,10,10,10,10,10]));
+console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findScore([3,7,3,7,1,1]));
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findFrame([3,7,3,7,1,1]));
@@ -130,7 +130,7 @@ console.log(findScore([3,7,3,7,1,1]));
 
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log('.');
-console.log(getMaxScore([[10,10,10,10,10,10,10,10,10,10,10,10],[10,10,10,10,10,10,10,10,10,10,1,1]]));
+console.log(getMaxScore([[10,10,10,10,10,10,10,10,10,10,5,5],[10,10,10,10,10,10,10,10,10,10,1,1]]));
 console.log('.');
 console.log(findFrame([3,7,3,7,1,1]));
 module.exports ={ findScore, findFrame };
