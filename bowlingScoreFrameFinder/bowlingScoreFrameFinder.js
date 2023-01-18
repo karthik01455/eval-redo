@@ -110,12 +110,27 @@ function findFrame(rolls)
     rolls.forEach(calculateFrame);
     return frame;
 }
+
+function getMaxScore(rollsArray)
+{
+    let maxScore=-1;
+    function findMaxScore(rolls)
+    {
+        maxScore= Math.max(maxScore,findScore(rolls));
+    }
+    rollsArray.forEach(findMaxScore);
+    return maxScore;
+}
 console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findScore([3,7,3,7,1,1]));
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findFrame([3,7,3,7,1,1]));
 console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findScore([3,7,3,7,1,1]));
+
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
+console.log('.');
+console.log(getMaxScore([[10,10,10,10,10,10,10,10,10,10,5,5],[10,10,10,10,10,10,10,10,10,10,1,1]]));
+console.log('.');
 console.log(findFrame([3,7,3,7,1,1]));
 module.exports ={ findScore, findFrame };
