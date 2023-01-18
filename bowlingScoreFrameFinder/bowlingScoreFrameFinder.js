@@ -2,8 +2,8 @@ function findScore(rolls)
 {
     function calculateFrame(element,index,array)
     { if(index<=10)
-        {
-        if(count==0 && element!=10)
+    {
+        if(count == 0 && element!= 10)
         {
             count=1;
             sum=sum+element;
@@ -58,7 +58,7 @@ function findFrame(rolls)
 {
     function calculateFrame(element,index,array)
     { if(index<=10)
-        {
+    {
         if(count==0 && element!=10)
         {
             count=1;
@@ -114,3 +114,4 @@ console.log(findScore([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findScore([3,7,3,7,1,1]));
 console.log(findFrame([10,10,10,10,10,10,10,10,10,10,5,5]));
 console.log(findFrame([3,7,3,7,1,1]));
+module.exports ={ findScore, findFrame };
