@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "Karthik_Shriram_G_S",
+    "password": null,
+    "database": "Karthik_Shriram_G_S",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port":4000
+  },
+  "test": {
+    "username": "Karthik_Shriram_G_S",
+    "password": null,
+    "database": "Karthik_Shriram_G_S",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port":4000
+  }
+}
